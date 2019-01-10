@@ -1,0 +1,18 @@
+<import src="/towxml/entry.wxml" />
+<view  class='video' >
+  <video src='{{video}}' poster='{{chapter.photo}}'></video>
+  <button>
+    <image src='../../image/morenmore.png'></image>
+  <text>课程列表</text>
+  </button>
+  
+</view>
+
+<scroll-view scroll-y class='swiper' style='height:1600px'>
+<template is="entry" data="{{...body}}" />
+</scroll-view>
+
+
+
+ <!-- <image src='../../image/morenmore.png'></image> -->
+

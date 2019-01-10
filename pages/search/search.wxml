@@ -1,0 +1,23 @@
+<form bindsubmit="formSubmit">
+  <!-- .. -->
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input type="text" name="keyword" class="" placeholder="请输入关键字" />
+      </view>
+    </view>
+    <button formType="submit" class='sousuo'>搜索</button>
+  </view>
+</form>
+<view style='font-size:15px;color:#959899;margin:40rpx'>搜索结果</view>
+
+
+<navigator url='../newid/newid?id={{item.id}}' class='class-content' wx:for="{{courses}}">
+  <view class='content-img'>
+    <image class='content-image' src="{{item.photo}}"></image>
+    <view class='content-title'>
+      {{item.name}}
+    </view>
+  </view>
+</navigator>

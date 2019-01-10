@@ -1,0 +1,102 @@
+/* page{
+  height: 6000px;
+  width: 100%;
+} */
+.nav-head-text{
+  background-color: red;
+  /* margin-right:5px;  */
+}
+.navChange{
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  color: #1E98AF;
+  text-align: center;
+  border: 1px #1E98AF solid;
+}
+swiper{
+  height: 6000px;
+  width: 100%;
+  font-size: 16px;
+  color: #4E4E4E;
+}
+.input-name{
+  width: 95%;
+}
+.flex-view{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+form{
+  height: 1000px;
+  width: 100%;
+}
+swiper-item{
+  height: 1000px;
+    width: 100%;
+}
+.juzhong{
+   /* text-align:center;
+   width: 200px; */
+   margin: 0 auto;
+   width: 100%;
+}
+.active{
+   background-color: #1E98AF;
+   color: white;
+  }
+  .input-color{
+    background-color: #EDEDED;
+    height: 26px;
+    /* width: 90%; */
+    
+   
+  }
+  .middle{
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 10rpx;
+  }
+  .nav-head-text{
+    width: 500rpx;
+    background-color: red;
+  }
+  .view-body{
+   display: flex;
+   width: 80%;
+   margin: 0 auto;
+   /* justify-content: space-around; */
+  }
+  .submitone{
+    width: 20%;
+    height: 40px;
+    background-color: #1E98AF;
+    font-size: 14px;
+    line-height: 40px;
+    margin-top: 20px;
+    color: white;
+}
+.zhuce{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.sexclass{
+  width: 33%
+}
+.sex-view{
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+#left{
+border-radius: 20px 0px 0px 20px;
+}
+#right{
+border-radius: 0px 20px 20px 0px;
+}

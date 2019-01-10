@@ -1,0 +1,89 @@
+<view class="topnav">
+  <view style='margin-left:20px;'>
+    <navigator url='../remind/remind'>
+      <image class='topnav-left' src='../../image/tixing.png'></image>
+    </navigator>
+  </view>
+  <view style='margin-right:20px;'>
+    <navigator class='navdisplay' url='../search/search'>
+      <image class='topnav-right' style='margin-right:30rpx' src='../../image/sousuo.png'></image>
+    </navigator>
+    <navigator class='navdisplay' url='../more/more'>
+      <image class='topnav-right' src='../../image/gengduo.png'></image>
+    </navigator>
+  </view>
+</view>
+
+
+<view class='body'>
+  <view class='title'>
+    <view class='title-one'>发现</view>
+    <view class='title-two'>推荐课程</view>
+  </view>            <!--  头部静态的推荐文字 -->
+  <view class='lunbo'>
+    <swiper class='swiper-body' indicator-active-color="#1F99B0" autoplay='true' interval='5000' duration='300' circular='true' current="{{swiperPage}}" bindchange="swiperChange">
+      <!--  changeIndicatorDots = "true" 轮播的圆点  -->
+      <block class='swiper-block' wx:for="{{slide_courses}}" wx:key="slide_courses">
+        <swiper-item class="swiper-item-img">
+          <image class='swiper-img' src="{{item.photo}}" class="slide-image" />
+          <!--swiper-item是swiper里面的一个个小轮播图 -->
+          <view class='swiper-time'>{{item.created_at}}发布</view>
+          <view class='swiper-text'>{{item.name}}</view>
+          <view class='swiper-text-two'>{{item.desc}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='point'>
+    <!-- 轮播图的圆点 -->
+    <block class="swiper-block" wx:for="{{slide_courses}}" wx:key="slide_courses">
+      <view class="swiper-point{{index == swiperPage ? ' activehover' :'' }}">
+      </view>
+    </block>
+  </view>
+  <!-- 轮播图的圆点 -->
+  <view class='fenge'></view>
+  <!--  分割线 -->
+
+  <view class='class-time'>课程发布日历</view>
+  <view class="a-scroll">
+    <scroll-view scroll-x="true" class="my-scroll">
+      <view class="scorll-item">
+        <view class='scorll-content' wx:for="{{new_courses}}" wx:key="new_courses">
+          <image class='scorll-img' src='{{item.photo}}'></image>
+          <view class='scorll-title'>{{item.name}}</view>
+          <view class='scorll-title-time'>{{item.created_at}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+  <view class='class-time'>最受欢迎的课程</view>
+  <view class="a-scroll">
+    <scroll-view scroll-x="true" class="my-scroll">
+      <view class="scorll-item">
+        <view class='scorll-content' wx:for="{{likes_courses}}" wx:key="likes_courses">
+          <image class='scorll-img' src='{{item.photo}}'></image>
+          <view class='scorll-title'>{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+  <view class='class-time'>入门课程</view>
+  <view class="a-scroll">
+    <scroll-view scroll-x="true" class="my-scroll">
+      <view class="scorll-item">
+        <view class='scorll-content' wx:for="{{recommended_courses}}" wx:key="recommended_courses">
+          <image class='scorll-img' src='{{item.photo}}'></image>
+          <view class='scorll-title'>{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+
+
+</view>

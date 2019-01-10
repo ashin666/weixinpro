@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/class/class",
+    "pages/course/course",
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/detail/detail",
+    "pages/remind/remind",
+    "pages/search/search",
+    "pages/more/more",
+    "pages/web/web",
+    "pages/newid/newid",
+    "pages/newWeb/newWeb",
+    "pages/video/video"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "itfun",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "color": "#818181",
+  "selectedColor": "#1B96AD",
+  "backgroundColor": "#fff",
+  "borderStyle": "#f6f6f6",
+  "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "发现",
+      "iconPath": "image/gzhinanzhen.png",
+      "selectedIconPath": "image/bzhinanzhen.png"
+    },
+    {
+      "pagePath": "pages/class/class",
+      "text": "分类",
+      "iconPath": "image/glubiao.png",
+      "selectedIconPath": "image/blubiao.png"
+    },
+    {
+      "pagePath": "pages/course/course",
+      "text": "课程日历",
+      "iconPath": "image/gcalendar.png",
+      "selectedIconPath": "image/bcalendar.png"
+    },
+    {
+      "pagePath": "pages/login/login",
+      "text": "我的",
+      "iconPath": "image/gwode.png",
+      "selectedIconPath": "image/bwode.png"
+    }
+  ]
+}
+}

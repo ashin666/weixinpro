@@ -1,0 +1,4 @@
+<navigator url='../newWeb/newWeb?id={{item.id}}' wx:for="{{notices}}" class='body' wx:key="body">
+ <view class='item-title'>{{item.title}}</view>
+ <view class='item-time'>{{item. created_at}}</view>
+</navigator> 

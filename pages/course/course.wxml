@@ -1,0 +1,16 @@
+<view class='box'>
+  <view class='title'>
+    课程日历
+  </view>
+  <view class='class-content' wx:for="{{courses}}">
+    <view class='content-img'>
+      <view class='content-time'>
+        {{item.created_at}}
+      </view>
+      <image class='content-image' src="{{item.photo}}"></image>
+      <view class='content-title'>
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+</view>

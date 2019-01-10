@@ -1,0 +1,57 @@
+<scroll-view scroll-x>
+<view style='width:400px;height:50px;'>
+  <text wx:for="{{categories}}" bindtap='switchNav' wx:key="h" class="navChange{{index==currentTab ? ' active' :''}}" data-index="{{index}}" data-slug="{{item.slug}}">{{item.name}}</text>
+  <!-- <text bindtap='switchNav' class="navChange{{1==currentTab ? ' active' :''}}" data-current='1' data-slug='back_end'>后端开发</text>
+  <text bindtap='switchNav' class="navChange{{2==currentTab ? ' active' :''}}" data-current='2' data-slug='operation'>运营维护</text>
+  <text bindtap='switchNav' class="navChange{{3==currentTab ? ' active' :''}}" data-current='3' data-slug='mobile'>移动端开发</text>
+  <text bindtap='switchNav' class="navChange{{4==currentTab ? ' active' :''}}" data-current='4' data-slug='database'>数据库及储存</text>
+  <text bindtap='switchNav' class="navChange{{5==currentTab ? ' active' :''}}" data-current='5' data-slug='ui'>UI设计</text> -->
+</view>
+</scroll-view> 
+
+<swiper current='{{currentTab}}' duration='300' bindchange='bindChange' style='height:{{height}}rpx'>
+  <swiper-item style='height:6970rpx' class='swiper-content' catchtouchmove='stopTouchMove'>
+      <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}"  wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+            <view class='etc-content'>{{item.body}}</view>
+      </navigator>
+  </swiper-item>
+   <swiper-item class='swiper-content' catchtouchmove='stopTouchMove'>
+      <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}" wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+            <view class='etc-content'>{{item.body}}</view>
+      </navigator>
+      <!-- <view>hello!!!!!!!!!!!</view> -->
+    </swiper-item>
+   <swiper-item class='swiper-content' catchtouchmove='stopTouchMove'> 
+      <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}" wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+      </navigator>
+      <!-- <view>helllllllllllllloooooooooooooo</view> -->
+   </swiper-item>
+   <swiper-item class='swiper-content' catchtouchmove='stopTouchMove'> 
+     <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}" wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+            <!-- <view class='etc-content'>{{item.body}}</view> -->
+      </navigator>
+   </swiper-item>
+    <swiper-item class='swiper-content' catchtouchmove='stopTouchMove'> 
+      <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}" wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+            <!-- <view class='etc-content'>{{item.body}}</view> -->
+      </navigator>
+   </swiper-item>
+    <swiper-item class='swiper-content' catchtouchmove='stopTouchMove'> 
+      <navigator url="../detail/detail?id={{item.id}}" class='view-content' wx:for="{{courses}}" wx:key="courses">
+            <image class='image-content' src="{{item.photo}}"></image> 
+            <view class='title-content'>{{item.name}}</view>
+            <!-- <view class='etc-content'>{{item.body}}</view> -->
+      </navigator>
+   </swiper-item>
+</swiper>
+

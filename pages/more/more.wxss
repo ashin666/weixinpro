@@ -1,0 +1,41 @@
+.body{
+  background-color: #EEEEF3;
+  color: #1F99AF;
+  font-size: 15px;
+}
+page{
+   background-color: #EEEEF3;
+}
+.about{
+  width:100%;
+  background-color: white;
+  text-align: center;
+
+}
+.about navigator{
+  padding: 20rpx 0;
+  /* border-top:1px solid #DAD9DC;  */
+  border-bottom: 1px solid #DAD9DC; 
+}
+.peixun{
+ 
+  width:100%;
+  background-color: white;
+  text-align: center;
+}
+.peixun navigator{
+  padding: 20rpx 0;
+  /* border-top:1px solid #DAD9DC; 
+  border-bottom: 1px solid #DAD9DC;  */
+}
+.out{
+  margin-top: 100rpx;
+  width:100%;
+  background-color: white;
+  text-align: center;
+}
+.out view{
+  padding: 20rpx 0;
+  /* border-top:1px solid #DAD9DC; 
+  border-bottom: 1px solid #DAD9DC;  */
+}

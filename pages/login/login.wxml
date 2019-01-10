@@ -1,0 +1,43 @@
+<!--pages/login/login.wxml-->
+<scroll-view class='mine-title'>
+  <view class='mine-login'>
+    <view data-current='0' bindtap='switchNav' class="navChange{{0==currentTab ? ' active' :''}}">我的主页</view>
+    <view data-current='1' bindtap='switchNav' class="navChange{{1==currentTab ? ' active' :''}}">喜欢的课程</view>
+    <view data-current='2' bindtap='switchNav' class="navChange{{2==currentTab ? ' active' :''}}">观看历史</view>
+  </view>
+</scroll-view>
+
+<swiper current='{{currentTab}}' duration='300' bindchange='bindChange'>
+  <swiper-item>
+    <view class='top-body'>
+      <view class='img-left'>
+        <image class='image' src='{{user.photo}}'></image>
+      </view>
+      <view class='img-right'>
+        <view class='fullname'>{{user.fullname}}</view>
+        <view class='id'>学籍编号：{{user.id}}</view>
+        <view class='vip'>{{user.premium == false ? '免费会员' : '付费会员'}}</view>
+      </view>
+    </view>
+    <view class='view-bottom'>
+      <view class='one email'>{{user.email}}</view>
+      <view class='one sex'>
+        <text class='black'>性别:</text>{{sex}}</view>
+      <view class='one company'>
+        <text class='black'>公司：</text>{{user.company == null ? '无' : '有' }}</view>
+      <view class='one introduce'>
+        <text class='black'>个人介绍：</text>{{user.introduce == null ? '无' : '有' }}</view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='likethis' wx:for="{{courses}}" wx:key="{{courses}}">
+      <image src="{{item.photo}}"></image>
+      <view class='like-title'>{{item.name}}</view>
+      <view class='like-detail'>{{item.body}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <!--   
+     <view>??????</view>    -->
+  </swiper-item>
+</swiper>

@@ -1,0 +1,59 @@
+<view class='view-body'>
+    <view class='nav-head-text' id='left' class='nav-head' data-current='0' bindtap='switchNav' class="navChange{{0==currentTab ? ' active' :''}}">
+    登录
+    </view>
+    <view class='nav-head-text' id='right' class='nav-head' data-current='1' bindtap='switchNav' class="navChange{{1==currentTab ? ' active' :''}}">
+    注册 
+    </view>
+</view>
+<swiper current='{{currentTab}}' duration='300' bindchange='bindChange'>
+    <swiper-item>
+          <form bindsubmit='formSubmit'>
+              <view class='middle'>
+                <text>电子邮件</text>
+                <input class='input-color' type="text" name="username" placeholder='电子邮件' />
+              </view>
+              <view class='middle'>
+                <text>密码</text>
+                <input class='input-color' password type="text" name="password" placeholder='密码' />
+              </view>
+              <view class="btn-area">
+                 <button class='submitone' formType="submit">登录</button>
+              </view>
+          </form>
+    </swiper-item>
+    <swiper-item>
+          <form bindsubmit='registeSubmit'>
+            <view class='flex-view'>
+              <view>
+                <text class='input-name'>姓</text>
+                <input class='input-name input-color' type="text" name="firstname" placeholder='姓' />
+              </view>
+              <view>
+                <text class='input-name'>名</text>
+                <input class='input-name input-color' type="text" name="lastname" placeholder='名' />
+              </view>
+            </view>
+                <view class='zhuce' style='font-size:12px;margin-top:10px;margin-bottom:10px;'>*请实名登记你的信息</view>
+                 <view class='zhuce'>
+                <text class='input-name'>电子邮件</text>
+                <input class='input-name input-color' type="text" name="e-mail" placeholder='电子邮件' />
+              </view>
+              <view class='zhuce'>
+                <text class='input-name'>密码</text>
+                <input class='input-name input-color' password type="text" name="password" placeholder='密码' />
+              </view>
+              <!-- <view class='changeSex zhuce'>
+                <text>性别</text>
+                  <view class='sex-view'>
+                    <button class='sexclass' id='sex-man'>男性</button>
+                    <button class='sexclass' id='sex-wom'>女性</button>
+                    <button class='sexclass' id='other'>其他</button>
+                  </view>
+              </view> -->
+              <view class="btn-area">
+                <button formType="submit" class='submitone'>注册</button>
+               </view>
+          </form>
+    </swiper-item>
+</swiper>

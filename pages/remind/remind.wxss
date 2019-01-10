@@ -1,0 +1,9 @@
+.body{
+  border-top:1px solid #F3F3F4;
+  border-bottom: 1px solid #F3F3F4; 
+  font-size:12px;
+  padding: 36rpx 0;
+}
+ .item-time{
+   text-align: right;
+ }

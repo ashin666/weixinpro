@@ -1,0 +1,153 @@
+/* pages/detail/detail.wxss */
+/* page{
+  width: 90%;
+  margin: 0 auto;
+} */
+.text-title{
+  font-size: 16px;
+  color: #595959;
+}
+.long-dec{
+word-break: break-all;
+-webkit-box-orient: vertical;/* 关键属性 */
+-webkit-line-clamp: 3;/* 关键属性 */
+overflow: hidden;/* 关键属性 */
+text-overflow: ellipsis;/* 超出内容显示省略号*/
+color: #29242B;
+font-size: 15px;
+display: -webkit-box;/*关键属性*/
+/* padding-left: 20rpx; */
+/* margin-top: -87rpx; */
+/* overflow: hidden;*/
+/* text-overflow:ellipsis;  */
+/* white-space: nowrap;  */
+/* font-size: 28rpx; */
+/* line-height: 40rpx; */
+}
+.title{
+  margin-bottom: 20px; 
+}
+.title-img{
+  width: 100%;
+  height: 300rpx;
+}
+.item-detail{
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #EDECEE; 
+
+}
+.left image{
+  width: 20px;
+  height: 20px;
+  margin-left: 30px;
+} 
+.left{
+  display: flex;
+  align-items: center;
+}
+.detail-right{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin: 0 auto;
+}
+.free{
+  background-color: #1F99B0;
+  width: 44px;
+  text-align: center;
+  border-radius:5px ;
+  height: 17px;
+  line-height: 17px;
+  font-size: 12px;
+  color: white;
+}
+.time{
+  font-size: 12px;
+}
+.freeandtime{
+  display: flex;
+  
+}
+.teachers{
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 30rpx 0;
+}
+.teacherimg image{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.teacher-detail{
+  color: #515151;
+  margin-left: 10px;
+}
+.my-scroll{
+      display: flex;
+    }
+     .scorll-item{
+      display: flex;
+    }
+    .scorll-content{
+      display: flex;
+      flex-direction: column;
+      height:200px;
+      margin-left:12px;
+      background-color: white;
+    }
+    .scorll-img{
+      height: 120px;
+    }
+    .tuijian{
+      background: #F0EFEF;
+    }
+    .scorll-title{
+      margin-top: 5px;
+    }
+    .class-time{
+      width: 90%;
+      margin: 0 auto;
+      color: #4C4B4C;
+     padding: 40rpx 0;
+    }
+    .indeximp{
+      margin-left: 20px;
+      font-size: 12px;
+      color: #676468;
+      font-weight: bold;
+    }
+    .hide{
+  display:-webkit-box;
+}
+.show{
+  display: block;
+}
+.arrow{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+
+    /* 测试用 */
+
+    /* .newzero{
+      width: 100%;
+      display: flex;
+    }
+    .newone{
+      width: 100%;
+      display: flex;
+    } */
+    /* .newview{
+      width: 100%;
+      display: flex;
+      height: 200px;
+    } */

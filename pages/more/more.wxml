@@ -1,0 +1,32 @@
+<view class='body'>
+<view class='about'>
+  <navigator url='../../pages/web/web?src={{url1}}'>ITFun会员</navigator>            
+  <navigator url='../../pages/web/web?src={{url2}}'>关于ITFun的概况</navigator>        <navigator url='../../pages/web/web?src={{url3}}'>长乐未央</navigator>             
+</view>
+<view style='margin-left:10px;font-size:12px;color:#717176;margin-top: 100rpx;margin-bottom:10rpx;'>线下培训</view>
+<view class='peixun'>
+  <navigator url='../../pages/web/web?src={{url3}}'>培训简介</navigator>             
+  <navigator url='../../pages/web/web?src={{url4}}'>Web前端培训</navigator>            <navigator url='../../pages/web/web?src={{url5}}'>PHP培训</navigator>              
+</view>
+<view class='out'>
+  <view bindtap='out'>安全退出</view>
+</view>
+</view>
+
+
+
+
+<!-- more.wxss里面都用导航
+more.js里面写上链接（data：{
+    url1：“http....”
+    url2：“http....”
+    url3：“http....”
+    url4：“http....”
+}）
+
+再用一个新的页面接
+teacher里面接收
+.js部分的data定义一个src：''对象
+然后在onload里面拿more里传过来的值
+
+退出部分有一个  啥啥syc -->

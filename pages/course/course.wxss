@@ -1,0 +1,33 @@
+/* pages/course/course.wxss */
+.title{
+  font-size: 26px;
+  color: #1E98AF;
+  font-weight: bold;
+  margin-left: 74rpx;
+  margin-bottom: 70rpx;
+}
+.content-img{
+  width: 90%;
+  margin: 0 auto;
+  
+}
+.content-img image{
+  height: 150px;
+  width: 100%;
+  border-radius:10px; 
+}
+.class-content{
+  margin-bottom: 50rpx;
+}
+.content-title{
+  color:#777B7C;
+  padding-bottom: 40rpx;
+
+}
+.content-time{
+  color:#777B7C;
+  padding-top: 40rpx;
+}
+.content-image{
+  margin: 20rpx 0rpx;
+}
